@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*{
+    font-family: "kalnia", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(255, 255, 255);
+}
+.Main{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: white;
+    align-items: start;
+}
+.Main.left{
+    width: 25%;
+    padding: 100px;
+    margin: 20px;
+}
+.Main .left .logo{
+    align-items: center;
+    padding-left: 20px;
+}
+.Main .left h2{
+    margin-bottom: 50px;
+    align-items: center;
+    padding-left: 30px;
+}
+#navbar li{
+    list-style: none;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: black;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 40%;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -4px;
+    left: 5px;
+}
+.Main .right{
+    width: auto;
+}
+.Main .right h1{
+    padding-left: 100px;
+}
+.Main .right h1{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.Main .right h2{
+    padding-top: 35px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+}
+.Main .right .details1, .details2{
+    padding-left: 250px;
+}
+.Main .right .event1, .event2, .event3{
+    padding-bottom: 75px;
+    
+}
+#big{
+    width: 600px;
+    height: 100px;
+}
+.Main .right .Avd{
+    padding-left: 250px;
+    padding-top: 10px;
+}
+.Main .right .details2{
+    display: flex;
+    flex-direction: row;
+}
+.Main .right .details2 .uploads{
+    display: flex;
+    flex-direction: column;
+}
